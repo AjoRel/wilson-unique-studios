@@ -47,7 +47,7 @@ Some results I recorded were:
 
 | Category       | Earlier Desktop Test | Updated Mobile Test |
 |----------------|----------------------|--------------------:|
-| Performance    | 66                   | 78                  |
+| Performance    |96                    | 78                  |
 | Accessibility  | 100                  | 100                 |
 | Best Practices | 77                   | 77                  |
 | SEO            | 100                  | 100                 |
