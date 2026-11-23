@@ -1,0 +1,647 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0B0B0B">
+
+  <meta name="description"
+        content="Meet Adriell Wilson, founder of Wilson Unique Studios. Photography, videography and creative media services based in Trinidad and Tobago.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About Us | Wilson Unique Studios">
+  <meta property="og:description"
+        content="Learn about Adriell Wilson and the creative work behind Wilson Unique Studios.">
+
+  <title>About Adriell Wilson | Wilson Unique Studios</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+        rel="stylesheet">
+
+  <link href="css/style.css?v=3.0" rel="stylesheet">
+
+  <script src="js/main.js?v=3.0" defer></script>
+
+  <style>
+
+    /* Founder layout */
+
+    .founder-section .founder-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: clamp(24px, 4vw, 55px);
+      align-items: center;
+    }
+
+    /* Founder photograph */
+
+    .founder-section .founder-photo-panel {
+      background: #0B0B0B;
+      padding: 25px;
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .founder-section .founder-photo-panel img {
+      display: block;
+      width: 100%;
+      max-width: 440px;
+      height: auto;
+      object-fit: contain;
+      object-position: center top;
+      mix-blend-mode: normal;
+      margin: 0 auto;
+    }
+
+    .founder-section .founder-photo-panel p {
+      color: #F7F4EE;
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-align: center;
+      margin: 18px 0 0;
+    }
+
+    /* Founder biography */
+
+    .founder-section .founder-copy {
+      min-width: 0;
+    }
+
+    .founder-section .founder-copy h2 {
+      font-size: clamp(32px, 4vw, 56px);
+      line-height: 1.15;
+      overflow-wrap: break-word;
+    }
+
+    .founder-section .founder-copy p {
+      max-width: 100%;
+    }
+
+    /* Actual photography in the How I Work section */
+
+    .about-photo img.about-work-photo {
+      display: block;
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      object-position: center;
+      background: #0B0B0B;
+      padding: 0;
+      mix-blend-mode: normal;
+    }
+
+    /* Tablet and mobile adjustments */
+
+    @media (max-width: 850px) {
+
+      .founder-section .founder-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 35px;
+      }
+
+      .founder-section .founder-photo-panel {
+        padding: 20px;
+      }
+
+      .founder-section .founder-copy h2 {
+        font-size: clamp(30px, 6vw, 46px);
+      }
+
+      .about-photo img.about-work-photo {
+        height: 350px;
+      }
+
+    }
+
+    @media (max-width: 600px) {
+
+      .founder-section .founder-photo-panel {
+        padding: 15px;
+      }
+
+      .founder-section .founder-photo-panel img {
+        width: 100%;
+        height: auto;
+      }
+
+      .founder-section .founder-copy h2 {
+        font-size: 34px;
+      }
+
+      .about-photo img.about-work-photo {
+        height: 270px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main">
+    Skip to content
+  </a>
+
+
+  <!-- Website Navigation -->
+
+  <header class="site-header">
+
+    <div class="container nav-wrap">
+
+      <a class="brand"
+         href="index.html"
+         aria-label="Wilson Unique Studios home">
+
+        <img src="img/wu-official-mark.png"
+             alt="Wilson Unique Studios logo"
+             class="brand-mark"
+             width="90"
+             height="64">
+
+        <span>
+          WILSON <strong>UNIQUE</strong>
+          <small>STUDIOS</small>
+        </span>
+
+      </a>
+
+      <button class="menu-button"
+              type="button"
+              aria-controls="site-navigation"
+              aria-expanded="false">
+
+        Menu <span aria-hidden="true">☰</span>
+
+      </button>
+
+      <nav class="site-nav"
+           id="site-navigation"
+           aria-label="Main navigation">
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+
+          <li>
+            <a href="about.html" aria-current="page">
+              About
+            </a>
+          </li>
+
+          <li>
+            <a href="photography.html">
+              Photography
+            </a>
+          </li>
+
+          <li>
+            <a href="video.html">
+              Video &amp; Livestream
+            </a>
+          </li>
+
+          <li>
+            <a href="portfolio.html">
+              Portfolio
+            </a>
+          </li>
+
+          <li>
+            <a href="contact.html">
+              Book / Contact
+            </a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <main id="main">
+
+
+    <!-- About Page Introduction -->
+
+    <section class="page-hero light-hero">
+
+      <div class="container">
+
+        <p class="eyebrow accent">
+          WHO WE ARE
+        </p>
+
+        <h1>
+          Meet the person<br>
+          <em>behind the lens.</em>
+        </h1>
+
+        <p>
+          Wilson Unique Studios is a Caribbean-rooted
+          photography and creative media business
+          founded by Adriell Wilson.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Founder Section -->
+
+    <section class="section-space founder-section"
+             aria-labelledby="founder-heading">
+
+      <div class="container founder-grid">
+
+
+        <!-- Founder Photograph -->
+
+        <div class="founder-photo-panel">
+
+          <img src="img/adriell-founder.jpg"
+               alt="Adriell Wilson, founder of Wilson Unique Studios"
+               width="576"
+               height="576"
+               loading="lazy">
+
+          <p>
+            FOUNDER / CREATIVE MEDIA
+          </p>
+
+        </div>
+
+
+
+        <!-- Founder Biography -->
+
+        <div class="founder-copy">
+
+          <p class="eyebrow accent">
+            ABOUT THE FOUNDER
+          </p>
+
+          <h2 id="founder-heading">
+            Adriell Wilson
+          </h2>
+
+          <p class="founder-subtitle">
+            Founder · Photographer · Videographer ·
+            Computer Science Student
+          </p>
+
+          <p>
+            My name is Adriell Wilson, and I started
+            Wilson Unique Studios because I enjoy
+            telling stories through photography and film.
+            I'm currently studying Computer Science
+            at the University of the Southern Caribbean,
+            but I've also spent the past few years
+            working with cameras, editing videos
+            and covering different types of events.
+          </p>
+
+          <p>
+            I've worked on portraits, headshots,
+            weddings, university events and media
+            projects for businesses and organisations.
+            What I like most is being able to combine
+            the creative side of media with what
+            I'm learning about technology.
+          </p>
+
+          <p>
+            I'm originally from Trinidad and grew
+            up in Guyana, so working with people
+            across the Caribbean is something
+            that matters to me. I want the studio
+            to keep growing while still making
+            work that feels personal and true
+            to the people involved.
+          </p>
+
+          <a class="founder-insta"
+             href="https://www.instagram.com/adriell.wilson/"
+             target="_blank"
+             rel="noopener noreferrer">
+
+            My Instagram: @adriell.wilson ↗
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- How We Work Section -->
+
+    <section class="section-space">
+
+      <div class="container about-grid">
+
+
+        <!-- Actual Wilson Unique Studios Work -->
+
+        <div class="about-photo">
+
+          <img src="img/event-01.jpg"
+               alt="Event photography by Wilson Unique Studios"
+               class="about-work-photo"
+               loading="lazy">
+
+        </div>
+
+
+
+        <!-- How We Work Description -->
+
+        <div class="about-text">
+
+          <p class="eyebrow accent">
+            HOW I WORK
+          </p>
+
+          <h2>
+            Good work starts<br>
+            with listening.
+          </h2>
+
+          <p>
+            We understand that every client has
+            a different story and budget.
+            Some need clean headshots for a team.
+            Others want their wedding documented,
+            or a conference recorded for people
+            who could not attend.
+          </p>
+
+          <p>
+            Our aim is to work closely with clients
+            from planning to delivery, paying
+            attention to the moments that
+            make each project different.
+          </p>
+
+          <p>
+            We work across photography,
+            video production and live event coverage,
+            with additional services depending
+            on what the project needs.
+          </p>
+
+          <a class="button-link solid"
+             href="contact.html">
+
+            Ask about a project
+            <span aria-hidden="true">↗</span>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Working Values -->
+
+    <section class="dark-band">
+
+      <div class="container">
+
+        <p class="eyebrow light">
+          WORKING VALUES
+        </p>
+
+        <div class="value-grid">
+
+
+          <article>
+
+            <span>01</span>
+
+            <h3>Communication</h3>
+
+            <p>
+              Listen first, ask the right
+              questions and agree on what
+              the client needs.
+            </p>
+
+          </article>
+
+
+
+          <article>
+
+            <span>02</span>
+
+            <h3>Care</h3>
+
+            <p>
+              Make people feel comfortable
+              in front of the camera.
+            </p>
+
+          </article>
+
+
+
+          <article>
+
+            <span>03</span>
+
+            <h3>Consistency</h3>
+
+            <p>
+              Take the time to plan,
+              capture and edit every
+              project properly.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Locations -->
+
+    <section class="section-space">
+
+      <div class="container narrow-content">
+
+        <p class="eyebrow accent">
+          WHERE WE WORK
+        </p>
+
+        <h2>
+          Trinidad &amp; Tobago,
+          with travel on request.
+        </h2>
+
+        <p>
+          We regularly discuss projects based
+          on location, coverage time and
+          equipment requirements.
+
+          If your project is outside Trinidad
+          and Tobago, send the details and
+          we can discuss what is possible.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Projects and Collaborations -->
+
+    <section class="section-space light-section">
+
+      <div class="container narrow-content">
+
+        <p class="eyebrow accent">
+          PROJECTS AND COLLABORATIONS
+        </p>
+
+        <h2>
+          Work with people and organisations.
+        </h2>
+
+        <p>
+          Along the way, I've been involved
+          with photography, videography and
+          media projects for organisations
+          across Trinidad and Tobago.
+
+          You can explore examples of our
+          photography and video work,
+          along with our creative collaborators,
+          on the portfolio page.
+        </p>
+
+        <a class="button-link outline"
+           href="portfolio.html">
+
+          View Our Portfolio ↗
+
+        </a>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- Website Footer -->
+
+  <footer class="site-footer">
+
+    <div class="container">
+
+
+      <div class="footer-top">
+
+        <div>
+
+          <p class="eyebrow">
+            THE MOMENTS MATTER
+          </p>
+
+          <h2>
+            Let's make something<br>
+            worth keeping.
+          </h2>
+
+        </div>
+
+
+        <div class="footer-cta">
+
+          <p>
+            Have a shoot, wedding or event
+            coming up? Tell us about it.
+          </p>
+
+          <a class="footer-button"
+             href="contact.html">
+
+            Start an Enquiry ↗
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="footer-bottom">
+
+        <p>
+          © <span id="year">2026</span>
+          Wilson Unique Studios.
+          Photography • Video • Livestreaming.
+        </p>
+
+        <p>
+
+          <a href="index.html">Home</a> ·
+
+          <a href="portfolio.html">
+            Portfolio
+          </a> ·
+
+          <a href="https://www.instagram.com/adriell.wilson/"
+             target="_blank"
+             rel="noopener noreferrer">
+
+            Instagram @adriell.wilson
+
+          </a>
+
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </footer>
+
+</body>
+</html>

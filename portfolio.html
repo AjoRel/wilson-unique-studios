@@ -1,0 +1,592 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0B0B0B">
+
+  <meta name="description"
+        content="Explore wedding photography, corporate headshots, events, portraits, videography and livestreaming by Wilson Unique Studios.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Portfolio & Clients | Wilson Unique Studios">
+  <meta property="og:description"
+        content="Explore photography and video work by Wilson Unique Studios.">
+
+  <title>Portfolio & Clients | Wilson Unique Studios</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+        rel="stylesheet">
+
+  <link href="css/style.css?v=3.0" rel="stylesheet">
+  <script src="js/main.js?v=3.0" defer></script>
+
+  <style>
+    .portfolio-grid .portfolio-card img {
+      display: block;
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    /* Show the entire corporate headshot without cropping */
+    .portfolio-grid .portfolio-card img.headshot-photo {
+      object-fit: contain;
+      object-position: center;
+      background: #172020;
+    }
+
+    /* Keep the video production photo properly sized */
+    .portfolio-grid .portfolio-card img.video-photo {
+      object-fit: cover;
+      object-position: center;
+      background: #0B0B0B;
+    }
+
+    @media (max-width: 700px) {
+      .portfolio-grid .portfolio-card img {
+        height: 280px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+
+      <a href="index.html"
+         class="brand"
+         aria-label="Wilson Unique Studios home">
+
+        <img src="img/wu-official-mark.png"
+             class="brand-mark"
+             alt="Wilson Unique Studios logo"
+             width="90"
+             height="64">
+
+        <span>
+          WILSON <strong>UNIQUE</strong>
+          <small>STUDIOS</small>
+        </span>
+      </a>
+
+      <button class="menu-button"
+              type="button"
+              aria-controls="site-navigation"
+              aria-expanded="false">
+        Menu <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav class="site-nav"
+           id="site-navigation"
+           aria-label="Main navigation">
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="photography.html">Photography</a></li>
+          <li><a href="video.html">Video &amp; Livestream</a></li>
+          <li>
+            <a href="portfolio.html" aria-current="page">
+              Portfolio
+            </a>
+          </li>
+          <li><a href="contact.html">Book / Contact</a></li>
+        </ul>
+
+      </nav>
+    </div>
+  </header>
+
+
+  <main id="main">
+
+    <!-- PORTFOLIO INTRODUCTION -->
+
+    <section class="page-hero light-hero">
+      <div class="container">
+
+        <p class="eyebrow accent">OUR PORTFOLIO</p>
+
+        <h1>
+          Work worth<br>
+          <em>looking back on.</em>
+        </h1>
+
+        <p>
+          Explore our photography and video work,
+          from weddings and portraits to corporate events,
+          videography and livestreaming.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- PORTFOLIO GALLERY -->
+
+    <section class="section-space">
+      <div class="container">
+
+        <!-- FILTER BUTTONS -->
+
+        <div class="filter-bar" aria-label="Filter portfolio">
+
+          <button class="filter-button active"
+                  type="button"
+                  data-filter="all"
+                  aria-pressed="true">
+            All
+          </button>
+
+          <button class="filter-button"
+                  type="button"
+                  data-filter="weddings"
+                  aria-pressed="false">
+            Weddings
+          </button>
+
+          <button class="filter-button"
+                  type="button"
+                  data-filter="portraits"
+                  aria-pressed="false">
+            Portraits
+          </button>
+
+          <button class="filter-button"
+                  type="button"
+                  data-filter="events"
+                  aria-pressed="false">
+            Events
+          </button>
+
+          <button class="filter-button"
+                  type="button"
+                  data-filter="video"
+                  aria-pressed="false">
+            Video
+          </button>
+
+        </div>
+
+
+        <div class="portfolio-grid">
+
+          <!-- 1. WEDDING PHOTOGRAPHY -->
+
+          <article class="portfolio-card" data-category="weddings">
+
+            <img src="img/wedding-01.jpg"
+                 alt="Wedding photography by Wilson Unique Studios"
+                 width="1200"
+                 height="850"
+                 loading="lazy">
+
+            <div>
+              <span>Weddings</span>
+              <h3>Wedding Photography</h3>
+
+              <p>
+                Capturing special moments, emotions and
+                memories from wedding celebrations.
+              </p>
+            </div>
+
+          </article>
+
+
+          <!-- 2. CORPORATE HEADSHOTS -->
+
+          <article class="portfolio-card" data-category="portraits">
+
+            <img src="img/headshot-01.jpg"
+                 class="headshot-photo"
+                 alt="Corporate headshot by Wilson Unique Studios"
+                 width="1200"
+                 height="850"
+                 loading="lazy">
+
+            <div>
+              <span>Portraits</span>
+              <h3>Corporate Headshots</h3>
+
+              <p>
+                Professional headshots for individuals,
+                teams and organisations.
+              </p>
+            </div>
+
+          </article>
+
+
+          <!-- 3. EVENT PHOTOGRAPHY -->
+
+          <article class="portfolio-card" data-category="events">
+
+            <img src="img/event-01.jpg"
+                 alt="Event photography by Wilson Unique Studios"
+                 width="1200"
+                 height="850"
+                 loading="lazy">
+
+            <div>
+              <span>Events</span>
+              <h3>Event Coverage</h3>
+
+              <p>
+                Photography coverage for conferences,
+                corporate events and special occasions.
+              </p>
+            </div>
+
+          </article>
+
+
+          <!-- 4. VIDEO PRODUCTION -->
+
+          <article class="portfolio-card" data-category="video">
+
+            <img src="img/video-01.jpg"
+                 class="video-photo"
+                 alt="Video production by Wilson Unique Studios"
+                 width="1200"
+                 height="850"
+                 loading="lazy">
+
+            <div>
+              <span>Video</span>
+              <h3>Video Production</h3>
+
+              <p>
+                Videography and video editing for businesses,
+                events and creative projects.
+              </p>
+            </div>
+
+          </article>
+
+
+          <!-- 5. GRADUATION PORTRAITS -->
+
+          <article class="portfolio-card" data-category="portraits">
+
+            <img src="img/graduation-01.jpg"
+                 alt="Graduation photography by Wilson Unique Studios"
+                 width="1200"
+                 height="850"
+                 loading="lazy">
+
+            <div>
+              <span>Portraits</span>
+              <h3>Graduation Portraits</h3>
+
+              <p>
+                Graduation portraits celebrating achievements
+                and important milestones.
+              </p>
+            </div>
+
+          </article>
+
+
+          <!-- 6. LIVE STREAMING -->
+
+          <article class="portfolio-card" data-category="video">
+
+            <img src="img/livestream-01.jpg"
+                 alt="Livestreaming production by Wilson Unique Studios"
+                 width="1200"
+                 height="850"
+                 loading="lazy">
+
+            <div>
+              <span>Video</span>
+              <h3>Live Streaming</h3>
+
+              <p>
+                Multicamera production and livestreaming
+                for events and programmes.
+              </p>
+            </div>
+
+          </article>
+
+
+          <!-- 7. PERSONAL PORTRAITS -->
+
+          <article class="portfolio-card" data-category="portraits">
+
+            <img src="img/portrait-01.jpg"
+                 alt="Portrait photography by Wilson Unique Studios"
+                 width="1200"
+                 height="850"
+                 loading="lazy">
+
+            <div>
+              <span>Portraits</span>
+              <h3>Personal Portraits</h3>
+
+              <p>
+                Creative portrait sessions for individuals,
+                couples and personal brands.
+              </p>
+            </div>
+
+          </article>
+
+
+          <!-- 8. CORPORATE WORK -->
+
+          <article class="portfolio-card" data-category="events">
+
+            <img src="img/corporate-01.jpg"
+                 alt="Corporate photography by Wilson Unique Studios"
+                 width="1200"
+                 height="850"
+                 loading="lazy">
+
+            <div>
+              <span>Events</span>
+              <h3>Corporate Work</h3>
+
+              <p>
+                Photography and media production
+                for businesses and organisations.
+              </p>
+            </div>
+
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- CLIENTS AND COLLABORATORS -->
+
+    <section class="clients-section">
+      <div class="container">
+
+        <p class="eyebrow accent">WORK EXPERIENCE</p>
+
+        <h2>Clients and Creative Collaborators</h2>
+
+        <p>
+          Organisations and creative teams Wilson Unique Studios
+          has worked with or collaborated with.
+        </p>
+
+
+        <div class="client-grid">
+
+          <div class="client-card client-logo-grid-card dark">
+            <img src="img/client-logos/jesse-schultz.webp"
+                 alt="Jesse Schultz logo"
+                 width="160" height="76" loading="lazy">
+            <p>Jesse Schultz</p>
+          </div>
+
+          <div class="client-card client-logo-grid-card light">
+            <img src="img/client-logos/ten-strings.webp"
+                 alt="Ten Strings Developmental Company logo"
+                 width="160" height="76" loading="lazy">
+            <p>Ten Strings Developmental Company</p>
+          </div>
+
+          <div class="client-card client-logo-grid-card dark">
+            <img src="img/client-logos/yutcah.webp"
+                 alt="YUTCAH logo"
+                 width="160" height="76" loading="lazy">
+            <p>YUTCAH</p>
+          </div>
+
+          <div class="client-card client-logo-grid-card dark">
+            <img src="img/client-logos/zwade-studio.webp"
+                 alt="Zwade Studio logo"
+                 width="160" height="76" loading="lazy">
+            <p>Zwade Studio</p>
+          </div>
+
+          <div class="client-card client-logo-grid-card dark">
+            <img src="img/client-logos/ra-photography.webp"
+                 alt="RA Photography logo"
+                 width="160" height="76" loading="lazy">
+            <p>RA Photography</p>
+          </div>
+
+          <div class="client-card client-logo-grid-card light">
+            <img src="img/client-logos/id-design-studio.webp"
+                 alt="ID Design Studio logo"
+                 width="160" height="76" loading="lazy">
+            <p>ID Design Studio</p>
+          </div>
+
+          <div class="client-card client-logo-grid-card light">
+            <img src="img/client-logos/uwi-st-augustine.webp"
+                 alt="UWI St. Augustine logo"
+                 width="160" height="76" loading="lazy">
+            <p>UWI St. Augustine</p>
+          </div>
+
+          <div class="client-card client-logo-grid-card light">
+            <img src="img/client-logos/ansa-packaging.webp"
+                 alt="ANSA Packaging logo"
+                 width="160" height="76" loading="lazy">
+            <p>ANSA Packaging</p>
+          </div>
+
+          <div class="client-card client-logo-grid-card light">
+            <img src="img/client-logos/mydns.webp"
+                 alt="Ministry of Youth Development and National Service logo"
+                 width="160" height="76" loading="lazy">
+            <p>Ministry of Youth Development and National Service</p>
+          </div>
+
+          <div class="client-card client-logo-grid-card light">
+            <img src="img/client-logos/usc.webp"
+                 alt="University of the Southern Caribbean logo"
+                 width="160" height="76" loading="lazy">
+            <p>University of the Southern Caribbean</p>
+          </div>
+
+          <div class="client-card client-logo-grid-card dark">
+            <img src="img/client-logos/spott.webp"
+                 alt="Student and Professional Organisation logo"
+                 width="160" height="76" loading="lazy">
+            <p>
+              The Student &amp; Professional Organisation
+              of Trinidad and Tobago
+            </p>
+          </div>
+
+          <div class="client-card client-logo-grid-card light">
+            <img src="img/client-logos/scc.webp"
+                 alt="South Caribbean Conference of Seventh-day Adventists logo"
+                 width="160" height="76" loading="lazy">
+            <p>
+              South Caribbean Conference of
+              Seventh-day Adventists
+            </p>
+          </div>
+
+          <div class="client-card client-logo-grid-card light">
+            <img src="img/client-logos/rhand-credit-union.webp"
+                 alt="RHAND Credit Union logo"
+                 width="160" height="76" loading="lazy">
+            <p>RHAND Credit Union</p>
+          </div>
+
+        </div>
+
+        <p class="small-note">
+          Logos identify past work and collaborations
+          and do not imply endorsement.
+        </p>
+
+      </div>
+    </section>
+
+
+
+    <!-- MORE WORK -->
+
+    <section class="section-space" id="project-links">
+      <div class="container">
+
+        <p class="eyebrow accent">MORE WORK</p>
+
+        <h2>See More of What We Do</h2>
+
+        <p class="project-intro">
+          Take a look at more of our photography and
+          video projects on Instagram, or contact us
+          to discuss your own project.
+        </p>
+
+        <div class="project-link-row">
+
+          <a class="button-link solid"
+             href="https://www.instagram.com/adriell.wilson/"
+             target="_blank"
+             rel="noopener noreferrer">
+            View Instagram Work ↗
+          </a>
+
+          <a class="button-link outline" href="contact.html">
+            Discuss Your Project ↗
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+
+  <!-- FOOTER -->
+
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div>
+          <p class="eyebrow">THE MOMENTS MATTER</p>
+          <h2>Let's make something<br>worth keeping.</h2>
+        </div>
+
+        <div class="footer-cta">
+          <p>
+            Have a shoot, wedding or event coming up?
+            Tell us about it.
+          </p>
+
+          <a class="footer-button" href="contact.html">
+            Start an Enquiry ↗
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p>
+          © <span id="year">2026</span>
+          Wilson Unique Studios.
+          Photography • Video • Livestreaming.
+        </p>
+
+        <p>
+          <a href="index.html">Home</a> ·
+          <a href="portfolio.html">Portfolio</a> ·
+          <a href="https://www.instagram.com/adriell.wilson/"
+             target="_blank"
+             rel="noopener noreferrer">
+            Instagram @adriell.wilson
+          </a>
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
