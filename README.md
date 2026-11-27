@@ -1,71 +1,33 @@
 # Wilson Unique Studios Website
 
-## About the Project
+## About the project
 
-This website was created for my CPTR331 Web Development assignment at the University of the Southern Caribbean.
+I developed this website for CPTR331 Web Development, Assignment 5 (Putting It All Together in Style!) at the University of the Southern Caribbean. I chose my own photography and videography business because I wanted to build something that I could continue using after the semester. The six pages are Home, About, Photography, Video & Livestream, Portfolio and Book/Contact.
 
-I decided to use my photography and videography business, Wilson Unique Studios, as the project because I wanted to build something that I could actually use outside of class.
+Live site: https://stupendous-babka-9e0ce4.netlify.app/
 
-The website allows visitors to learn about my business, look at some of my photography and videography work, see the services I offer, and contact me about bookings.
+## Technologies and structure
 
-## Pages on the Website
+I used HTML5, CSS3, JavaScript, Skeleton 2.0.4 and the Montserrat and Inter fonts from Google Fonts. The HTML pages are in the root; css/style.css contains shared styling, js/main.js contains the interactive logic, and img/ contains photographs, graphics and client logos. The media/ folder is reserved for local media; the current background video is hosted externally by Vimeo. Features include a mobile menu, client logo carousel, portfolio filtering and contact form validation.
 
-The website has six pages:
+## Hosting and CDN
 
-1. **Home** – An introduction to Wilson Unique Studios.
-2. **About** – Information about the business and myself.
-3. **Photography** – The different photography services I offer.
-4. **Video & Livestreaming** – Information about videography, video editing and live streaming.
-5. **Portfolio** – Some of the photography and media work I have done.
-6. **Contact** – A way for visitors to send enquiries.
+I created a Netlify account and deployed the static website using its CDN over HTTPS. The _headers file sets cache-control for CSS and JS (one day), images (seven days) and HTML (revalidation). CSS and JS links use the ?v=3.0 version parameter. The _redirects file defines clean routes. Skeleton is served by cdnjs, fonts by Google Fonts and video by Vimeo. Netlify deployment of the latest repository revision still needs to be checked.
 
-## Technologies I Used
+## Performance testing
 
-- HTML5 to structure the website.
-- CSS3 to style the pages and make the design responsive.
-- JavaScript for features such as the navigation menu, portfolio filters and moving client logos.
-- Skeleton CSS to help with the layout.
-- Google Fonts for the website typography.
-- Netlify to publish the website online.
-- GitHub to store and keep track of my code.
+I reduced the image folder from approximately 61.9 MB to 2.8 MB (about 95.5%) and used WebP logos, lazy loading and deferred JavaScript. Earlier Lighthouse results recorded in my November 23 report were: desktop performance 96, mobile before optimization 66 and mobile after optimization 78. Accessibility and SEO were 100, and Best Practices was 77 in all three observations. The original Lighthouse screenshots have not been recovered.
 
-## What I Learned
+On November 26 I used Safari Web Inspector and a Python local HTTP server. With browser caches disabled, the two local load times were 1.610 s and 0.747 s (average 1.1785 s). Netlify recorded 1.130 s with browser caching disabled and 0.764 s with cached resources visible. The uncached hosted observation was about 4.1% lower than the local average; the cached observation was about 32.4% lower than the uncached observation. These are preliminary observations, not proof of a CDN-only speed improvement. Request counts and viewport appearances differed, the local and hosted versions were not confirmed identical, and the Vimeo video continues transferring data. The actual Safari screenshots are included in my submitted technical report.
 
-This project gave me more practice with building a website using HTML, CSS and JavaScript.
+## Accessibility and SEO
 
-One of the things I struggled with was getting the pages to link correctly and making sure the CSS and images loaded after uploading the website to Netlify.
+I used semantic HTML, image alt text, labelled form controls, a skip link, ARIA states, responsive layouts and reduced-motion support. I added individual page titles and descriptions, robots.txt and sitemap.xml using the actual Netlify domain. Automated accessibility scores do not establish full accessibility compliance.
 
-I also learned that large image files can affect website performance. I had to reduce the file sizes of my photographs and test the website again.
+## Testing and limitations
 
-GitHub is also still new to me, so this project is helping me understand how to upload my code and keep track of changes.
-
-## Website Testing
-
-I used Google PageSpeed Insights to test how the website performs on mobile and desktop.
-
-Some results I recorded were:
-
-| Category       | Earlier Desktop Test | Updated Mobile Test |
-|----------------|----------------------|--------------------:|
-| Performance    |96                    | 78                  |
-| Accessibility  | 100                  | 100                 |
-| Best Practices | 77                   | 77                  |
-| SEO            | 100                  | 100                 |
-
-The mobile performance score improved from 66 to 78 after I worked on reducing the image file sizes.
-
-These results are from different tests, so the scores may change when the website is tested again.
-
-## Live Website
-
-https://stupendous-babka-9e0ce4.netlify.app/
+To run locally, open a terminal in the project root, run python3 -m http.server 8000, then visit http://localhost:8000/. Check all six pages and test the navigation, filters and form. The form validates name, email, address and telephone, but an earlier live submission returned a 404; successful receipt in Netlify Forms still needs confirmation. W3C HTML validation for all six pages and the current Netlify deployment also need verification.
 
 ## Developer
 
-Adriell Wilson
-
-BSc Computer Science Student
-
-University of the Southern Caribbean
-
-Wilson Unique Studios
+Adriell Wilson — BSc Computer Science, University of the Southern Caribbean.
